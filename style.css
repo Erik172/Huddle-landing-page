@@ -34,7 +34,6 @@ body {
     font-size: 16px;
     color: white;
     margin-right: 25px;
-    display: contents;
 }
 
 .main__text-title {
@@ -86,6 +85,10 @@ ion-icon {
     .main {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    
+    .main__text {
+        display: contents;
     }
 
     .main__text-title {
