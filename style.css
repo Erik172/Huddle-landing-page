@@ -1,0 +1,101 @@
+/*https://erik172.github.io*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans';
+    background: url(images/bg-desktop.svg) #674bb1;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.header__logo img {
+    max-width: 70%;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main__text {
+    width: 50%;
+    font-size: 16px;
+    color: white;
+    margin-right: 25px;
+}
+
+.main__text-title {
+    font-size: 50px;
+}
+
+.main__image {
+    width: 50%;
+}
+
+.main__image-img {
+    max-width: 100%;
+}
+
+.main__button a {
+    border: 2px white solid;
+    padding: 13px;
+    border-radius: 26px;
+    text-decoration: none;
+    background-color: white;
+    color: #674bb1;
+    display: inline-flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.main__button a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ion-icon {
+    font-size: 40px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    margin: 0 10% 5% 0;
+    align-items: flex-end;
+}
+
+.footer__social a {
+    padding: 5px;
+}
+
+@media screen and (max-width: 375px){
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__text-title {
+        font-size: 30px;
+    }
+
+    .main__button a {
+        width: 80%;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
